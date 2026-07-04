@@ -63,24 +63,37 @@
       related services at <a href="https://oursecretsapp.com">https://oursecretsapp.com</a>.
     </p>
     <p>
-      OurSecrets is designed for anonymous expression. We do not require real names to use core
-      features, and we do not sell personal data.
+      OurSecrets is designed for pseudonymous sharing. Your real name is not required for normal
+      public posting, but your chosen nickname may be displayed with secrets, comments, or other
+      activity. Account, moderation, security, and technical records may still be associated with
+      your account internally. We do not sell personal data.
+    </p>
+    <p>
+      You should not choose a nickname that reveals sensitive personal information. A nickname does
+      not guarantee complete anonymity.
     </p>
 
     <h2>Account Information</h2>
     <p>
       When you create and use an account, we process information needed to authenticate you and
       operate your account, such as account identifiers, sign-in credentials or tokens provided
-      through supported authentication methods, and basic account settings or preferences linked
-      to your profile.
+      through supported authentication methods, your chosen nickname, and basic account settings
+      or preferences linked to your profile.
+    </p>
+
+    <h2>Public Nicknames</h2>
+    <p>
+      You choose a nickname for your account. Your nickname may be displayed publicly with your
+      secrets, comments, and related activity. Avoid using real names, contact details, or other
+      sensitive identifying information in your nickname.
     </p>
 
     <h2>User-Submitted Secrets and Comments</h2>
     <p>
       We process the secrets, comments, and related text or media you submit so they can be
-      displayed, stored, moderated, and associated with your account for Service operation. Content
-      may be shown anonymously to other users according to app design, but it is linked internally
-      to your account for moderation, safety, and enforcement purposes.
+      displayed, stored, moderated, and associated with your account for Service operation. Public
+      content may be shown with your nickname, but it is linked internally to your account for
+      moderation, safety, and enforcement purposes.
     </p>
 
     <h2>Votes, Reports, Reads, and Moderation Records</h2>
@@ -90,33 +103,58 @@
       history, and related metadata needed to operate community features, investigate abuse, and
       enforce our policies.
     </p>
+    <p>
+      For abuse prevention and voting integrity, a vote record may include connection information
+      such as an IP address and User-Agent. An IP address does not always identify a specific
+      person. Vote records are configured to expire after approximately 30 days.
+    </p>
+
+    <h2>Location Information</h2>
+    <p>
+      Location permission is used only when you use location-based features. The app may determine
+      an approximate city and country to support local feeds and location-based posting. You may
+      deny location permission, though some location-based features may not work without it.
+    </p>
+    <p>
+      Precise location coordinates are not described as publicly displayed on this page. Location
+      processing may involve approximate or precise location data depending on how a feature
+      operates and what permission you grant.
+    </p>
 
     <h2>Subscription Status</h2>
     <p>
       If you purchase a subscription or premium feature, we receive subscription status and
-      entitlement information from Apple, Google, or other authorized payment platforms so we can
-      provide access to paid features. Payment card details are processed by the store, not by
-      OurSecrets directly.
+      entitlement information from Apple, Google, RevenueCat, or other authorized payment platforms
+      so we can provide access to paid features. Payment card details are processed by the store,
+      not by OurSecrets directly.
     </p>
 
-    <h2>Device or Notification Data</h2>
+    <h2>Notifications</h2>
     <p>
-      Where you enable notifications or related features, we may process device tokens, platform
-      identifiers, notification preferences, and delivery-related data needed to send alerts you
-      request or that are necessary for Service operation.
+      If you enable notifications, Firebase notification infrastructure may process a notification
+      token on your device to deliver alerts through topic-based subscriptions. The OurSecrets
+      application backend does not currently store that notification token.
+    </p>
+
+    <h2>Translation Processing</h2>
+    <p>
+      Premium and Titanium subscribers can translate secret and comment text on the secret detail
+      screen. Premium users must tap the Translate control. Titanium users may also receive
+      automatic translations on that screen when the content language differs from the device
+      language or when the content language is not identified. In each case, the relevant text is
+      sent to Google translation services to generate a translation. Translated results may be
+      cached to improve performance. Free accounts do not have access to translation features.
     </p>
 
     <h2>Technical and Security Information</h2>
     <p>
-      Like most online services, we process technical and security information needed to operate,
-      protect, and improve the Service. This may include device type, operating system version,
-      app version, crash reports, performance logs, diagnostic data, and security-related event
-      information such as authentication activity or abuse signals.
+      We process technical and security information needed to operate, protect, and secure the
+      Service. This may include authentication activity, abuse signals, server and application
+      security logs, and related records generated during normal Service operation.
     </p>
     <p>
-      We do not describe every technical log category on this page. Some technical data may be
-      retained for limited periods for security, troubleshooting, fraud prevention, or legal
-      compliance, and is not necessarily kept permanently.
+      Some technical data may be retained for limited periods for security, fraud prevention, or
+      legal compliance, and is not necessarily kept permanently.
     </p>
 
     <h2>How Information Is Used</h2>
@@ -124,9 +162,11 @@
     <ul>
       <li>Provide, maintain, and improve the Service</li>
       <li>Authenticate accounts and deliver requested features</li>
+      <li>Display public content with nicknames and support location-based features</li>
       <li>Operate voting, reporting, and community interaction features</li>
       <li>Process subscription entitlements</li>
-      <li>Send notifications you enable or that are necessary for the Service</li>
+      <li>Deliver notifications you enable through supported notification infrastructure</li>
+      <li>Generate translations when you use translation features</li>
       <li>Detect, investigate, and prevent abuse, fraud, and security incidents</li>
       <li>Comply with legal obligations and respond to lawful requests</li>
       <li>Communicate with you about support, safety, or policy matters when needed</li>
@@ -141,10 +181,21 @@
 
     <h2>Service Providers</h2>
     <p>
-      We use trusted service providers to help operate the Service, such as hosting, database,
-      authentication, analytics, crash reporting, notification delivery, subscription validation,
-      and moderation tooling. These providers process information on our behalf according to
-      contractual and legal requirements.
+      We use trusted service providers to help operate the Service. Depending on the feature
+      involved, this may include:
+    </p>
+    <ul>
+      <li>Render for backend hosting</li>
+      <li>MongoDB Atlas for database hosting</li>
+      <li>Firebase for notification infrastructure</li>
+      <li>RevenueCat for subscription management</li>
+      <li>Apple App Store and Google Play for purchases</li>
+      <li>Google translation services for translation features</li>
+      <li>Google Gemini for AI-generated seed content, where applicable</li>
+    </ul>
+    <p>
+      These providers process information on our behalf according to contractual and legal
+      requirements and only for the functions they support.
     </p>
 
     <h2>Legal Disclosures</h2>
@@ -168,10 +219,16 @@
 
     <h2>Account and Data Deletion</h2>
     <p>
-      You can delete your account from inside the app. Account deletion initiates removal or
-      de-identification of account-linked data according to our operational and legal requirements.
+      You can delete your account from inside the app. Account deletion initiates removal of
+      configured account-linked records according to our operational and legal requirements.
       Deleting your account does not automatically cancel App Store or Google Play subscriptions;
       those must be managed separately through the relevant store.
+    </p>
+    <p>
+      Some information may remain for a period in backups, with service providers, or where
+      retention is necessary for security, fraud prevention, legal compliance, or active legal
+      obligations. We do not promise that every external-provider or backup record disappears
+      immediately.
     </p>
 
     <h2>Store Subscriptions</h2>
